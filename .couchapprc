@@ -2,6 +2,9 @@
   "env" : {
     "default" : {
       "db" : "http://localhost:5984/orcas"
+    },
+    "prod" : {
+      "db" : "http://admin:spiderman@10.155.59.15:5984/orcas"
     }
   }
 }
