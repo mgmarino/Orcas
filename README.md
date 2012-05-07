@@ -1,6 +1,6 @@
 # Orcas 
 
-Orcas is a clone of a ORCA couchapp made originally by Mark Howe.
+Orcas is a clone of a ORCA couchapp made originally by Mark Howe.  This repo is for exploration and customization. 
 
 ## Requirements
 
