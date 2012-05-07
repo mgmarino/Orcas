@@ -6,6 +6,12 @@ Orcas is a clone of a ORCA couchapp made originally by Mark Howe.  This repo is 
 
 Orca, see http://orca.physics.unc.edu
 
+## Screenshot
+
+A screenshot:
+
+![A screenshot](http://github.com/mgmarino/Orcas/raw/master/xdocs/Orcas_SS.png)
+
 ## Install
 
 <pre><code>
