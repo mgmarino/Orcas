@@ -1,0 +1,547 @@
+
+body {
+	background-color: #ffffff;
+	margin:0px;
+    margin-top:0px;
+	padding:0px;
+    text-align:center;
+}
+html {overflow-y: scroll;}
+
+.p {
+	margin:0px;
+	padding:0px;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	text-align: inherit;
+	color: inherit;
+	line-height: inherit;
+	vertical-align: top;
+}
+
+h1 {
+    font-size:11pt;
+    font-weight:bold;   
+}
+
+h4 {
+    font-size:11pt;
+	font-weight:bold;   
+}
+
+p {
+	font-weight:normal;   
+}
+
+img {
+	border:0px;
+}
+
+div {
+	margin:0px;
+	padding:0px;
+	font-family:verdana; font-size:14px;
+}
+
+a:link, a:visited{
+	COLOR:#009833;
+	text-decoration:inherit;
+}
+
+#main {
+	width:900px;
+    height:auto;
+	margin: 0px auto;
+	border: 0px;
+	text-align: center;
+}
+
+#colwrap_1 {
+	float:left;
+	width:800px;
+	margin-top:0px;
+	margin-left:0px;
+	border: 0px solid #ffffff;
+
+}
+
+#logoleft {
+	margin-left:29px;
+	margin-top:18px;
+	width:62px;
+	height:45px;
+	margin-bottom:5px;
+	float:left;
+	display:inline;
+
+}
+
+#maintitle {
+    font-family:"Times New Roman",Georgia,Serif;
+    color:rgb(0,0,255);
+    font-size:20pt;
+    position:relative;
+    top:30px;
+    text-align: center;
+}
+
+#logoright {
+	margin-top:18px;
+	width:62px;
+	height:45px;
+	margin-bottom:5px;
+	float:right;
+	display:inline;
+
+}
+
+#hDivider1 
+{
+	width:  900px;
+	height:  5px;
+    border-top-width: 1px;  
+    border-top-color: #dddddd; 
+    border-top-style: solid; 
+}
+
+#hDivider2 
+{
+	width:  900px;
+	height:  10px;
+    border-bottom-width: 1px;  
+    border-bottom-color: #dddddd; 
+    border-bottom-style: solid; 
+}
+
+#StatusLog {
+    width:893px;
+    background: #ffffee;
+    float: left;
+    margin-left: -23px;
+    font-size: 75%;
+    border: 1px solid #888888;
+    text-align:left;
+    padding-left:5px;
+}
+
+#ProcessLog {
+    width:893px;
+    background: #ffffee;
+    font-size: 75%;
+    border: 1px solid #888888;
+    text-align:left;
+    padding-left:5px;
+}
+
+
+#alarms {
+    text-align:left;
+	display:inline;
+}
+
+#plotList {
+    float: left;
+	margin-left:100px;
+    text-align:left;
+	display:inline;
+}
+
+#StatusLog {
+    float: left;
+    text-align:left;
+}
+
+#det {
+   color: #888888;
+}
+
+table, tr, td, th{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   border-collapse: collapse;
+}
+
+
+td {
+   padding-top: 0px;
+   padding-bottom: 0px;    
+}   
+
+#rowName {
+   color:#009933;
+   padding-right:10px;
+}
+
+.Information    { color:#000000; }
+.Setup          { color:#000000; }
+.Range          { color:#000000; }
+.Hardware       { color:#ff8888; }
+.RunInhibitor   { color:#ff8888; }
+.DataFlow       { color:#ff8888; }
+.Important      { color:#ff0000; }
+.Emergency      { color:#ff0000; }
+
+.sbox {
+	border:0px; /*important*/
+	background-color:transparent; /*important*/
+	float:left;
+	font-size: 20px;
+	font-family:verdana;
+	margin-left: 0px;
+	width:  260px;
+	height: 32px;
+	padding-left: 7px;
+}
+
+#alarmCountNone
+{ 
+    width: 350px; 	
+	margin-left: -100px;
+    color: #888888;
+    float:left; 
+}
+
+#machineInfoTable { display: table; }
+#dataPlotTable    { display: table; }
+#alarmTable       { display: table; }
+#processTable     { display: table; }
+#dataSetTable     { display: table; }
+#row              { display: table-row; }
+
+#machineList 
+{
+    color: #888888;
+}
+#historyList {
+    color: #888888;
+}
+
+greyfield 
+{
+    color: #888888;
+}
+
+#historyTime
+{
+	width:  150px;
+    color: #888888;
+}
+
+
+
+#orcaListName 
+{
+    text-align: left;
+	width:  200px;
+    padding-left: 40px;
+    color: #009933;
+}
+
+#historyListName 
+{
+    text-align: left;
+    padding-left: 40px;
+	width:  150px;
+    color: #009933;
+}
+
+#historyTimeSep
+{
+	width:  40px;
+    color: #888888;
+}
+
+#orcaListState 
+{
+    text-align: left;
+	width:  100px;
+    color: #888888;
+
+}
+
+#orcaListExperiment 
+{
+    text-align: left;
+	width:  140px;
+    color: #888888;
+}
+
+#orcaListUptime 
+{
+    text-align: left;
+	width:  120px;
+    color: #888888;
+}
+
+#orcaListVersion
+{
+    text-align: left;
+	width:  190px;
+    color: #888888;
+}
+
+#orcaListIpNumber
+{
+    text-align: left;
+	width:  170px;
+    color: #888888;
+}
+#machineName 
+{
+    text-align: left;
+	width:  115px;
+    color: #009933;
+    display: table-cell;
+}
+
+#machineNameCol 
+{
+    text-align: left;
+	width:  115px;
+    color: #009933;
+    display: table-cell;
+}
+
+#machineInfoNameCol 
+{
+    text-align: left;
+	width:  115px;
+    color: #009933;
+    display: table-cell;
+}
+
+#machineInfoCol 
+{
+    text-align: left;
+	width:  300px;
+    display: table-cell;
+}
+
+#runInfoNameCol 
+{
+    text-align: left;
+	width:  170px;
+    color: #009933;
+    display: table-cell;
+    padding: 10px;
+    border-left-width: 1px;  
+    border-left-color: #dddddd; 
+    border-left-style: solid; 
+}
+
+
+#runInfoCol 
+{
+    text-align: left;
+	width:  300px;
+    display: table-cell;
+}
+
+#alarmNameCol 
+{
+ 	width:  450px;
+    text-align: left;
+    color: #009933;
+    display: table-cell;
+}
+
+#alarmSeverityCol 
+{
+	width:  120px;
+    text-align: left;
+    display: table-cell;
+}
+
+#alarmPostedCol 
+{
+	width:  400px;
+    text-align: left;
+    color: #888888;
+    display: table-cell;
+}
+
+#processNameCol 
+{
+ 	width:  400px;
+    text-align: left;
+    color: #009933;
+    display: table-cell;
+}
+
+#processStateCol 
+{
+	width:  400px;
+    text-align: left;
+    color: #888888;
+    display: table-cell;
+}
+
+.hlt td {
+    background-color: #ddddff;
+    color: black;
+}
+
+#datasetNameCol 
+{
+    text-align: left;
+    color: #009933;
+    display: table-cell;
+}
+
+#datasetPlotCol 
+{
+	width:  450px;
+    display: table-cell;
+}
+
+#historyPlotCol 
+{
+	width:  500px;
+    display: table-cell;
+}
+
+#experimentNameCol 
+{
+    text-align: center;
+    color: #009933;
+    display: table-cell;
+}
+
+#experimentPlotCol 
+{
+    text-align: center;
+    display: table-cell;
+}
+
+ 
+#backgroundPopup {  
+    display:none;  
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6*/  
+    height:100%;  
+    width:100%;  
+    top:0;  
+    left:0;  
+    background:#000000;  
+    border:1px solid #cecece;  
+    z-index:1;  
+}  
+
+#popupTitle {
+    text-align: left;
+    color: #888888;
+}
+
+#popupDescription {
+    text-align: left;
+}
+
+#popupContact {  
+    display:none;  
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6*/  
+    height:250px;  
+    width:650px;  
+    background:#FFFFFF;  
+    border:2px solid #cecece;  
+    z-index:2;  
+    padding:12px;  
+    font-size:13px;  
+}  
+#popupContact h1 {  
+    text-align:left;  
+    color:#009933;  
+    font-size:22px;  
+    font-weight:700;  
+    border-bottom:1px dotted #D3D3D3;  
+    padding-bottom:2px;  
+    margin-bottom:20px;  
+}  
+#popupContactClose {  
+    font-size:14px;  
+    line-height:14px;  
+    right:6px;  
+    top:4px;  
+    position:absolute;  
+    color:#6fa5fd;  
+    font-weight:700;  
+    display:block;  
+}  
+#button{  
+    text-align:center;  
+    margin:100px;  
+} 
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+}
+#nav li {
+	float: left; 
+}
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; 
+}
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; 
+}
+
+#dataList {
+    text-align:left;
+    width:400px;
+}
+
+
+
+.level0 { margin-left: 10px; }
+.level1 { margin-left: 15px; }
+.level2 { margin-left: 20px; }
+.level3 { margin-left: 25px; }
+.level4 { margin-left: 30px; }
+.level5 { margin-left: 35px; }
+.level6 { margin-left: 40px; }
+.level7 { margin-left: 45px; }
+
+.leaf {
+    cursor:pointer;
+	color:#009933;
+}
+countItem {
+    width:20px;
+    padding-left:20px;
+    text-align:right;
+	color:#999933;
+}
+.leaf:hover{ background-color: #A9BCEF;}
+.nodecollapsed .nodecontent{ display: none; }
+
+nodename  {
+    cursor:pointer;
+    background: transparent url('minus.png') no-repeat;
+    padding: 0px 0px 0px 18px;
+    background-position:0px 2px; 
+	color:#888888;
+
+}
+.nodecollapsed nodename  {
+    background: transparent url('plus.png') no-repeat;
+    background-position:0px 2px; 
+}

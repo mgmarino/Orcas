@@ -1,0 +1,78 @@
+<html>
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery-ui-1.7.3.custom.css" rel="stylesheet" type="text/css" />	
+	<link href="css/anytime.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/sprintf-0.7-beta1.js"></script>
+	<script type="text/javascript" src="js/jquery.couch.js"></script>
+	<script type="text/javascript" src="js/images.js"></script>
+	<script type="text/javascript" src="js/history.js"></script>    
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/themes/grid.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>  
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/javaScripts.js"></script>
+	<script type="text/javascript" src="/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.7.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/anytimec.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<div id="colwrap_1">		
+			<img src="images/OrcaRight.gif" id="logoleft" title="ORCA" alt=""/>
+			<maintitle id="maintitle"> </maintitle>
+			<img src="images/OrcaRight.gif" id="logoright" title="ORCA"  alt=""/>
+			<div style="clear:both;"></div>
+			<div id="hDivider1"></div>
+		</div>
+		
+		<ul id="nav">
+			<li><a href="index.html">ORCA List</a></li>
+		</ul>
+			<div style="clear:both;"></div>
+
+		<div id="dataPlotTable" >
+			<div class="row">
+			
+				<div id="datasetNameCol">
+					<h4 style="color:#888888" align="center"> Parameters</h4>
+					<div id="historyList"></div>
+				</div>
+
+				<div id="historyPlotCol">
+					<h4 style="color:#888888">History</h4>
+					<div id="historyChart" style="width: 650px; height: 300px"></div>
+					<input type=button value="Remove Last Series" onClick="removeSeries()">
+					
+					<div>&#160;</div>
+					<input type=button value="Last 8 Hrs" onClick="loadLast8()">
+					<input type=button value="Last 2 Days" onClick="loadLast2Days()">
+					<input type=button value="Last Week" onClick="loadLastWeek()">
+					<input type=button value="Last Month" onClick="loadLastMonth()">
+					Before:
+					<input type="text" id="endDateField" size="20" value="" />
+					<input type=button value="Present" onClick="setToNow()">
+					<br/>
+					<div id="zoomButtons" display=none>
+						<br/>
+						<input type=button value="Use Visible Range and Reload" onClick="loadToZoomValues()">
+						<br/>
+					</div>
+					<br/>
+					<div id="loadStatus" style="color:#888888" align="left"></div>
+					<div id="loadedStatus" style="color:#885555" align="left"></div>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<div id="hDivider2"></div>
+		<br/>
+	
+	
+</div>
+	
+</body>
+</html>

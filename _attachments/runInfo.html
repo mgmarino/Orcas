@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>  
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+   <title>ORCA RunInfo</title>  
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery-ui-1.7.3.custom.css" rel="stylesheet" type="text/css" />	
+
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/sprintf-0.7-beta1.js"></script>
+	<script type="text/javascript" src="js/jquery.couch.js"></script>
+	<script type="text/javascript" src="js/images.js"></script>
+	<script type="text/javascript" src="js/runInfo.js"></script>    
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/themes/grid.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>  
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/javaScripts.js"></script>
+
+	<script type="text/javascript" src="js/jquery-ui-1.7.3.custom.min.js"></script>
+</head> 
+
+<body>
+	<div id="main">
+	
+		<div id="colwrap_1">		
+			<img src="images/OrcaRight.gif" id="logoleft" title="ORCA" alt=""/>
+			<maintitle id="maintitle"> </maintitle>
+			<img src="images/OrcaRight.gif" id="logoright" title="ORCA"  alt=""/>
+			<div style="clear:both;"></div>
+			<div id="hDivider1"></div>
+		</div>
+		
+		<ul id="nav">
+			<li><a href="index.html">ORCA List</a></li>
+		</ul>
+		<div style="clear:both;"></div>
+		
+
+
+		<div id="machineInfoTable">
+			<div class="row">
+
+				<div id="machineInfoNameCol">
+					<h4 style="color:#000000"> Machine</h4>
+					<div id="machineInfoName"></div>
+				</div>
+
+				<div id="machineInfoCol">
+					<h4 style="color:#000000">&#160;</h4>
+					<div id="machineInfo"></div>
+				</div>
+
+				<div id="runInfoNameCol">
+					<h4 style="color:#000000"> Run Info</h4>
+					<div id="runInfoName"></div>
+				</div>
+
+				<div id="runInfoCol">
+					<h4 style="color:#000000">&#160;</h4>
+					<div id="runInfo"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="clear:both;"></div>
+		<div id="hDivider1"></div>
+		<div style="clear:both;"></div>
+		
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#datatab">Data</a></li>
+				<li><a href="#alarmtab" id="alarmtabtext">Alarms</a></li>
+				<li><a href="#processtab" id="processtabtext">Process Info</a></li>
+				<li><a href="#statustab">Status Log</a></li>
+			</ul>
+
+			<div id="datatab">
+				<div id="dataPlotTable" >
+					<div class="row">
+						<div id="datasetNameCol">
+							<h4 style="color:#000000"> List of 1D Histograms by Name</h4>
+							<div id="dataList"></div>
+						</div>
+
+						<div id="datasetPlotCol">
+							<h4 style="color:#000000">Plotting Area</h4>
+							<div id="histogramChart1" style="width: 450px; height: 300px"></div>
+							<input type="button" id="Button2" value="View On New Page" onclick="openPlot()" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="alarmtab"></div>
+			<div id="processtab"></div>
+			<div id="statustab">
+				<div>
+					<div id="StatusLog" style="overflow: auto;  height: 400px"></div>
+					<p>---<p/>
+				</div>
+			</div>
+
+		</div>
+
+		<div style="clear:both"></div>
+		<div id="hDivider2"></div>
+		<div style="clear:both"></div>
+		
+</div>
+    <div id="popupContact">  
+        <a id="popupContactClose">x</a>  
+        <h1 id="popupTitle"></h1>  
+        <p id="popupDescription">  
+        </p>  
+    </div>  
+    <div id="backgroundPopup"></div>  
+</body>
+</html>
+
+
+
