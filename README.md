@@ -20,4 +20,5 @@ To configure the application display and behavior, modify the files:
     _attachments/script.js
     
 Now view your app at http://localhost:5984/orcas/_design/orcas/index.html 
+</code>
 
