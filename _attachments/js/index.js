@@ -20,10 +20,15 @@ function loadDBs () {
 
 function loadDBList(dbs){
     dbs.forEach(function(d1) {
-        if(d1 != '_users' && d1 != 'orcas' && !d1.match("history")){
-            updateMachineInfo(d1);
-         }
-         else if(d1.match("history")){
+        var aDB = $.couch.db(d1);
+        aDB.allDocs( { keys : ['machineinfo', 'runinfo'] ,     
+                       success: function(data) {
+                         for (var i in data.rows) {
+                             if (data.rows[i]['error']) return;
+                         }
+                         updateMachineInfo(d1);
+                     } });
+        if(d1.match("history")){
             updateHistoryInfo(d1);
             historyList[d1] = d1;
         }
