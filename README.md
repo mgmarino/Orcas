@@ -1,4 +1,4 @@
-# inventory
+# Orcas 
 
 Orcas is a clone of a ORCA couchapp made originally by Mark Howe.
 
